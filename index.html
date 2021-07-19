@@ -18,7 +18,7 @@
 <body>
     <!-- Шапка сайта-->
     <header class="header">
-        <div class="header__main container">
+        <section class="header__main container">
             <div class="logo header__logo">
                 <a href="./index.html">
                     <span class="logo__main">Web</span><span class="logo__header-color">Studio</span>
@@ -45,9 +45,10 @@
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
-        </div>
+        </section>
     </header>
 
+    <!-- основной контент страницы -->
     <main class="main-section">
         <!-- Секция герой -->
         <section class="hero overlay">
@@ -239,97 +240,101 @@
                 </ul>
             </div>
         </section>
-        <section class="our-clients-section container">
-            <h2 class="head">Постоянные клиенты</h2>
-            <ul class="clients-list">
-                <li class="client">
+        <section class="clients-section container">
+            <h2 class="clients-section__title">Постоянные клиенты</h2>
+            <ul class="clients-section-list">
+                <li class="clients-section-list__client">
                     <a href="#">
-                        <svg class="client-icon"><use href="./images/sprite.svg#icon-yago"></use></svg>
+                        <svg class="clients-section-list__icon"><use href="./images/sprite.svg#icon-yago"></use></svg>
                     </a>
                 </li>
-                <li class="client">
+                <li class="clients-section-list__client">
                     <a href="#">
-                        <svg class="client-icon"><use href="./images/sprite.svg#icon-tagline"></use></svg>
+                        <svg class="clients-section-list__icon"><use href="./images/sprite.svg#icon-tagline"></use></svg>
                     </a>
                 </li>
-                <li class="client">
+                <li class="clients-section-list__client">
                     <a href="#">
-                        <svg class="client-icon"><use href="./images/sprite.svg#icon-company"></use></svg>
+                        <svg class="clients-section-list__icon"><use href="./images/sprite.svg#icon-company"></use></svg>
                     </a>
                 </li>
-                <li class="client">
+                <li class="clients-section-list__client">
                     <a href="#">
-                        <svg class="client-icon"><use href="./images/sprite.svg#icon-foster-peters"></use></svg>
+                        <svg class="clients-section-list__icon"><use href="./images/sprite.svg#icon-foster-peters"></use></svg>
                     </a>
                 </li>
-                <li class="client"> 
+                <li class="clients-section-list__client"> 
                     <a href="#">
-                        <svg class="client-icon"><use href="./images/sprite.svg#icon-brand"></use></svg>
+                        <svg class="clients-section-list__icon"><use href="./images/sprite.svg#icon-brand"></use></svg>
                     </a>
                 </li>
-                <li class="client">
+                <li class="clients-section-list__client">
                     <a href="#">
-                        <svg class="client-icon"><use href="./images/sprite.svg#icon-tag"></use></svg>
+                        <svg class="clients-section-list__icon"><use href="./images/sprite.svg#icon-tag"></use></svg>
                     </a>
                 </li>
             </ul>
         </section>
     </main>
-
+    <!-- футер -->
     <footer class="footer">
-        <section class="container footer-flex">
+        <section class="footer__section container">
             <div class="footer__main">
-            <div class="logo footer__logo">
-                <a href="./index.html">
-                    <span class="logo__main">Web</span><span class="logo__footer-color">Studio</span>
-                </a>
-            </div>
-            <address>
-                <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
-                <ul class="footer-contacts">
-                    <li class="footer-item"><a href="mailto:info@devstudio.com"
-                            class="footer-link">info@devstudio.com</a></li>
-                    <li class="footer-item"><a href="tel:+380961111111" class="footer-link">+38 096 111 11 11</a></li>
-                </ul>
-            </address>
+                <div class="logo footer__logo">
+                    <a href="./index.html">
+                        <span class="logo__main">Web</span><span class="logo__footer-color">Studio</span>
+                    </a>
+                </div>
+                <address>
+                    <p class="footer__address">г. Киев, пр-т Леси Украинки, 26</p>
+                    <ul class="footer__contacts">
+                        <li class="footer__item"><a href="mailto:info@devstudio.com"
+                                class="footer__link">info@devstudio.com</a></li>
+                        <li class="footer__item"><a href="tel:+380961111111" class="footer__link">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
             </div>
 
-            <div class="footer-network footer-list">
-                <p class="footer-title">присоединяйтесь</p>
-                <ul class="footer-links">
-                    <li>
-                        <a href="#" class="social-network"><svg class="icon-footer" width="20px" height="20px">
+            <div class="footer-list">
+                <p class="footer-list__title">присоединяйтесь</p>
+
+                <ul class="footer-network">
+                    <li class="footer-network__list-item"> 
+                        <a href="#" class="footer-network__item"><svg class="footer-network__icon" width="20px" height="20px">
                                 <use href="./images/sprite.svg#icon-instagram"></use>
                             </svg> </a>
                     </li>
-                    <li>
-                        <a href="#" class="social-network"><svg class="icon-footer" width="20px" height="20px">
+                    <li class="footer-network__list-item">
+                        <a href="#" class="footer-network__item"><svg class="footer-network__icon" width="20px" height="20px">
                                 <use href="./images/sprite.svg#icon-twitter"></use>
                             </svg> </a>
                     </li>
-                    <li>
-                        <a href="#" class="social-network"><svg class="icon-footer" width="20px" height="20px">
+                    <li class="footer-network__list-item">
+                        <a href="#" class="footer-network__item"><svg class="footer-network__icon" width="20px" height="20px">
                                 <use href="./images/sprite.svg#icon-facebook"></use>
                             </svg> </a>
                     </li>
-                    <li>
-                        <a href="#" class="social-network"><svg class="icon-footer" width="20px" height="20px">
+                    <li class="footer-network__list-item">
+                        <a href="#" class="footer-network__item"><svg class="footer-network__icon" width="20px" height="20px">
                                 <use href="./images/sprite.svg#icon-linkedin"></use>
                             </svg> </a>
                     </li>
                 </ul>
             </div>
+            <!-- форма футера -->
             <form action="#" class="footer-form">
-                <p class="footer-form-title">Подпишитесь на рассылку</p>
-                <div class="footer-form-position">
-                <label for="name" class="footer-form-label">
-                    <input type="email" class="footer-form-input" name="user-email" placeholder="E-mail" required>
-                </label>
-                <button type="submit" class="footer-form-btn">Подписатся</button>
+                <p class="footer-form__title">Подпишитесь на рассылку</p>
+                <div class="footer-form__position">
+                    <label for="name" class="footer-form__label">
+                        <input type="email" class="footer-form__input" name="user-email" placeholder="E-mail" required>
+                    </label>
+                    <button type="submit" class="footer-form__button">Подписатся</button>
                 </div>
             </form>
         </section>
     </footer>
+
+    <!-- модальное окно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button data-modal-close class="close-modal">
@@ -380,6 +385,7 @@
             </form>
         </div>
     </div>
+    <!-- скрипт -->
     <script src="./js/modal.js"></script>
 </body>
 

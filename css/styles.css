@@ -105,9 +105,7 @@ address {
 .logo__header-color {
   color: var(--main-black-color);
 }
-.logo__footer-color {
-  color: var(--main-white-color);
-}
+
 /* Стили навигации */
 
 .site-nav .site-nav__link {
@@ -405,22 +403,22 @@ a {
 
 /* Стили секции Наши клиенты */
 
-.our-clients-section {
+.clients-section {
   padding-top: 94px;
   padding-bottom: 94px;
   display: block;
 }
 
-.our-clients-section > .head {
+.clients-section__title {
   font-size: 36px;
   text-align: center;
   margin-bottom: 50px;
 }
 
-.clients-list {
+.clients-section-list {
   display: flex;
 }
-.clients-list .client {
+.clients-section-list__client {
   width: 170px;
   height: 92px;
   border: 1px solid var(--icon-bg-color);
@@ -435,15 +433,15 @@ a {
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-list .client:not(:last-child) {
+.clients-section-list__client:not(:last-child) {
   margin-right: 30px;
 }
-.clients-list .client:hover,
-.clients-list .client:focus {
+.clients-section-list__client:hover,
+.clients-section-list__client:focus {
   border: 1px solid var(--extra-blue-color);
 }
 
-.client-icon {
+.clients-section-list__icon{
   width: 106px;
   height: 60px;
   fill: var(--icon-bg-color);
@@ -451,8 +449,8 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list .client:hover .client-icon,
-.clients-list .client:focus .client-icon {
+.clients-section-list__client:hover .clients-section-list__icon,
+.clients-section-list__clientt:focus .clients-section-list__icon {
   fill: var(--extra-blue-color);
 }
 /* Стили футера */
@@ -462,40 +460,45 @@ a {
   padding-bottom: 60px;
   background-color: var(--hero-footer-bg-color);
 }
+
+.footer__section {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo__footer-color {
+  color: var(--main-white-color);
+}
+
 .footer__logo{
   margin-bottom: 20px;
 }
-.footer-address {
+
+.footer__address {
   font-size: 14px;
   line-height: 1.7;
   color: var(--main-white-color);
   margin-bottom: 9px;
 }
-.footer-item:not(:last-child) {
+.footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.footer-contacts .footer-link {
+.footer__contacts .footer__link {
   font-size: 14px;
   color: var(--footer-link-color);
 }
-.footer-contacts .footer-link:hover,
-.footer-contacts .footer-link:focus {
+.footer__contacts .footer__link:hover,
+.footer__contacts .footer__link:focus {
   color: var(--extra-blue-color);
 }
-.footer-flex {
-  display: flex;
-  align-items: baseline;
-}
+/* соц-сети футера */
 .footer-list {
   display: block;
   margin-left: 70px;
   list-style: none;
 }
-.footer-links {
-  display: flex;
-  margin: 0 auto;
-}
-.footer-title {
+
+.footer-list__title {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 700;
@@ -504,7 +507,17 @@ a {
   text-transform: uppercase;
   color: var(--main-white-color);
 }
-.footer-links .social-network {
+
+.footer-network {
+  display: flex;
+  margin: 0 auto;
+}
+
+.footer-network__list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-network__item {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -517,15 +530,12 @@ a {
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-links > li:not(:last-child) {
-  margin-right: 10px;
-}
 
-.footer-links .social-network:hover,
-.footer-links .social-network:focus {
+.footer-network__item:hover,
+.footer-network__item:focus {
   background-color: var(--extra-blue-color);
 }
-.icon-footer {
+.footer-network__icon {
   width: 20px;
   height: 20px;
   padding: 0;
@@ -542,7 +552,7 @@ a {
   margin-left: 93px;
 }
 
-.footer-form-title {
+.footer-form__title {
   color: var(--main-white-color);
   font-weight: 700;
   font-size: 14px;
@@ -552,10 +562,10 @@ a {
   display: flex;
   justify-content: baseline;
 }
-.footer-form-position {
+.footer-form__position {
   display: flex;
 }
-.footer-form-input {
+.footer-form__input {
   width: 358px;
   height: 50px;
   background-color: var(--hero-footer-bg-color);
@@ -568,7 +578,7 @@ a {
   outline: none;
   color: var(--main-white-color);
 }
-.footer-form-btn {
+.footer-form__button {
   position: relative;
 
   width: 200px;
@@ -588,7 +598,7 @@ a {
   letter-spacing: 0.06em;
   cursor: pointer;
 }
-.footer-form-btn::after {
+.footer-form__button::after {
   content: "";
   width: 24px;
   height: 24px;
