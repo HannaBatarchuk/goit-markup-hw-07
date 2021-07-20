@@ -68,14 +68,14 @@
   cursor: pointer;
   outline: none;
   transform: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-form-input:focus {
-  border-color: var(--extra-blue-color);
-}
+  &:focus {
+    border-color: var(--extra-blue-color);
 
-.modal-form-input:focus + .modal-form-icon {
-  fill: var(--extra-blue-color);
+    & + .modal-form-icon {
+      fill: var(--extra-blue-color);
+    }
+  }
 }
 
 .modal-form-text {
@@ -93,10 +93,11 @@
   line-height: 1.14;
   letter-spacing: 0.01em;
   transform: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-form-text:focus {
-  outline: none;
-  border-color: var(--extra-blue-color);
+
+  &:focus {
+    outline: none;
+    border-color: var(--extra-blue-color);
+  }
 }
 
 .modal-form-field {
@@ -125,31 +126,33 @@
   bottom: 20px;
 }
 
-.modal-form-field .form-check-policy {
+.form-check-policy {
   font-size: 14px;
   line-height: 1.71px;
   margin-bottom: 30px;
   margin: 0 auto;
-}
-.form-check-policy::before {
-  content: "";
-  width: 16px;
-  height: 15px;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  display: inline-block;
-  border-radius: 4px;
-  margin-right: 8px;
-  vertical-align: middle;
-  cursor: pointer;
-}
-.modal-form-check:checked + .form-check-policy::before {
-  background-image: url(../images/svg-images/icon-check.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-color: var(--extra-blue-color);
-  border-color: var(--extra-blue-color);
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 8px;
+    vertical-align: middle;
+    cursor: pointer;
+
+    .modal-form-check:checked + & {
+      background-image: url(../images/svg-images/icon-check.svg);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-color: var(--extra-blue-color);
+      border-color: var(--extra-blue-color);
+    }
+  }
 }
 
 .form-check-policy a {

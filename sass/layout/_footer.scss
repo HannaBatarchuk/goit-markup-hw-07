@@ -28,11 +28,12 @@
 .footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.footer__contacts .footer__link {
+.footer__link {
   font-size: 14px;
   color: var(--footer-link-color);
-}
-.footer__contacts .footer__link:hover,
-.footer__contacts .footer__link:focus {
-  color: var(--extra-blue-color);
+
+  &:hover,
+  &:focus {
+    color: var(--extra-blue-color);
+  }
 }

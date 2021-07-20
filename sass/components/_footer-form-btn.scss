@@ -17,14 +17,15 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
-}
-.footer-form__button::after {
-  content: "";
-  width: 24px;
-  height: 24px;
-  background-image: url(../images/svg-images/icon-send.svg);
 
-  position: absolute;
-  top: 13px;
-  right: 28px;
+  &::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/svg-images/icon-send.svg);
+
+    position: absolute;
+    top: 13px;
+    right: 28px;
+  }
 }

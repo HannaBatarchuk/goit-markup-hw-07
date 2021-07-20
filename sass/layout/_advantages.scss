@@ -6,6 +6,20 @@
 .advantages {
   display: flex;
   justify-content: space-between;
+
+  & .atention::before {
+    background-image: url(../images/svg-images/antenna.svg);
+  }
+
+  & .punctuality::before {
+    background-image: url(../images/svg-images/clock.svg);
+  }
+  & .planing::before {
+    background-image: url(../images/svg-images/diagram.svg);
+  }
+  & .technologies::before {
+    background-image: url(../images/svg-images/astronaut.svg);
+  }
 }
 
 .advantages__title {
@@ -21,10 +35,7 @@
   color: var(--secondary-text-color);
 }
 
-.advantages__atention::before,
-.advantages__punctuality::before,
-.advantages__planing::before,
-.advantages__technologies::before {
+.advantage::before {
   height: 120px;
   background-color: var(--secondary-bg-color);
   content: "";
@@ -34,18 +45,4 @@
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.advantages__atention::before {
-  background-image: url(../images/svg-images/antenna.svg);
-}
-
-.advantages__punctuality::before {
-  background-image: url(../images/svg-images/clock.svg);
-}
-.advantages__planing::before {
-  background-image: url(../images/svg-images/diagram.svg);
-}
-.advantages__technologies::before {
-  background-image: url(../images/svg-images/astronaut.svg);
 }

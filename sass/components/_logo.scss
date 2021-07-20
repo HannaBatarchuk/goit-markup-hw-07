@@ -6,32 +6,7 @@
   font-family: Raleway, sans-serif;
   text-decoration: none;
 }
-.header__logo {
-  margin-right: 93px;
-}
 
-.site-nav .site-nav__item + .site-nav__item {
-  margin-left: 50px;
-}
-.header-address {
-  margin-left: auto;
-}
-.header-address .header-address__item {
-  min-width: 135px;
-  min-height: 16px;
-  justify-content: center;
-  align-content: center;
-}
-.header-address .header-address__item + .header-address__item {
-  margin-left: 50px;
-}
-.header-address__link {
-  display: flex;
-  align-items: center;
-}
 .logo__main {
   color: var(--extra-blue-color);
-}
-.logo__header-color {
-  color: var(--main-black-color);
 }
